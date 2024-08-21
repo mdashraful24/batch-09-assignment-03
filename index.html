@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/c9b48ef8a4.js" crossorigin="anonymous"></script>
     <!-- DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,6 +23,8 @@
                     colors: {
                         clifford: '#da373d',
                         'pri-color': '#FF4240',
+                        'btn-color': '#FFFFFF',
+                        'search-icon': '#89898B',
                     },
 
                     fontFamily: {
@@ -33,7 +37,54 @@
 </head>
 
 <body class="font-manrope">
-    
+    <header>
+        <!-- Navbar section starts -->
+        <nav class="container mx-auto my-3 lg:px-28">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  text-base font-normal">
+                            <li><a class="text-pri-color font-bold">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                            <li><i class="fa-solid fa-magnifying-glass text-search-icon block md:block"></i></li>
+                        </ul>
+                    </div>
+                    <a href="">
+                        <h1 class="text-xl font-extrabold">Hockey<span class="text-pri-color">’</span>s
+                        </h1>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base font-normal">
+                        <li><a class="text-pri-color font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-5">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass text-search-icon hidden lg:block"></i>
+                    </div>
+                    <a class="btn bg-pri-color text-xl font-bold text-btn-color">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
